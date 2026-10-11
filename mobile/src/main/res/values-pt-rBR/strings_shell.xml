@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lz_space_detail_added">Clone já está no espaço clonado</string>
+    <string name="lz_space_detail_pending">Arquivos de instalação copiados para o espaço clonado</string>
+    <string name="lz_space_detail_not_added">Nenhum clone adicionado ainda</string>
+    <string name="lz_shell_enhanced_method">Instalação automática quando autorizada; caso contrário, usa a confirmação do sistema</string>
+    <string name="lz_shell_current_version">Versão atual %1$s</string>
+    <string name="lz_shell_profile_identity">Você está no espaço clonado</string>
+    <string name="lz_shell_profile_isolation">Os aplicativos e dados aqui estão isolados do espaço principal.</string>
+    <string name="lz_shell_profile_pick_files">Escolher arquivos do espaço clonado</string>
+    <string name="lz_shell_prepare_read">1 · Arquivos de instalação coletados, incluindo todos os pacotes divididos</string>
+    <string name="lz_shell_prepare_copy">2 · Copiando para o espaço clonado</string>
+    <string name="lz_shell_prepare_copied">2 · Copiado para o espaço clonado</string>
+    <string name="lz_shell_prepare_confirm">3 · Confirme a instalação no instalador do Android</string>
+    <string name="lz_shell_space_details">Detalhes do espaço</string>
+    <string name="lz_shell_space_details_summary">%1$d clone(s) no espaço clonado. Apps, contas e arquivos são isolados do espaço principal.</string>
+    <string name="lz_shell_pending_unavailable">Não foi possível ler as instalações pendentes. Reconecte pelo PrismSpace no espaço principal e tente novamente.</string>
+    <string name="lz_space_detail_unknown">Estado do clone ainda não confirmado</string>
+    <string name="lz_space_cached_list">O espaço clonado está indisponível. O estado dos clones nesta lista pode estar desatualizado.</string>
+</resources>

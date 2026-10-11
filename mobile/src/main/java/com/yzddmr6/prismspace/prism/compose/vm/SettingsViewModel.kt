@@ -97,6 +97,8 @@ data class SettingsUiModel(
     val spaceActionSummary: String = "",
     val spaceActionNeedsConfirmation: Boolean = true,
     val spaceActionEnabled: Boolean = true,
+    // Profiles with our package that are neither provisioned nor the primary (diagnostic row only).
+    val surplusProfileIds: List<Int> = emptyList(),
 ) {
     val spaceSuspended: Boolean get() = spaceFreezeState == SpaceFreezeState.Frozen
 }
@@ -117,6 +119,7 @@ internal fun mapSettingsUiModel(
     capabilityState: CapabilityState,
     selectedMode: PrismMode = PrismMode.Normal,
     res: StringResolver,
+    surplusProfileIds: List<Int> = emptyList(),
 ): SettingsUiModel {
     val shizukuCapable = shizukuAuthorized && capabilityState.shizuku is CapabilityAvailability.Available
     val rootCapable = capabilityState.root is CapabilityAvailability.Available
@@ -178,7 +181,22 @@ internal fun mapSettingsUiModel(
             res(R.string.lz_set_create_summary, emptyArray())
         },
         spaceActionNeedsConfirmation = profileOwner,
+        surplusProfileIds = surplusProfileIds,
     )
+}
+
+/**
+ * Surplus profiles are a parent-side ownership fact: inside the managed profile there is nothing
+ * to look up (and the owner-user accessor asserts in debug builds), so the lookup is not called.
+ * Real lookup failures degrade to no row.
+ */
+internal fun settingsSurplusProfileIds(
+    isParentProfile: Boolean,
+    lookup: () -> List<Int>,
+    onFailure: (Throwable) -> Unit = {},
+): List<Int> {
+    if (!isParentProfile) return emptyList()
+    return runCatching(lookup).onFailure(onFailure).getOrDefault(emptyList())
 }
 
 // ---------------------------------------------------------------------------
@@ -616,6 +634,14 @@ class SettingsViewModel(app: Application) : AndroidViewModel(app) {
         }
     }
 
+    /** Surplus profiles are never removed in-app: only the existing system removal guidance. */
+    fun openSurplusProfileRemoval(activity: Activity?) {
+        val ids = _uiState.value?.surplusProfileIds.orEmpty()
+        DiagnosticLog.i(TAG, "surplus profile removal guidance users=$ids opened=${activity != null}")
+        activity ?: return
+        PrismSetup.promptManualRemoval(activity, R.string.lz_set_surplus_profiles_removal_message)
+    }
+
     fun exportLogs(context: Context) {
         viewModelScope.launch {
             setFeedback(str(R.string.lz_setvm_sharing_report), isError = false)
@@ -721,6 +747,11 @@ class SettingsViewModel(app: Application) : AndroidViewModel(app) {
             capabilityState = capabilityState,
             selectedMode = runtime.preferredMode,
             res = prismResolver(getApplication()),
+            surplusProfileIds = settingsSurplusProfileIds(
+                isParentProfile = Users.isParentProfile(),
+                lookup = { Users.getSurplusProfiles().map { it.toId() } },
+                onFailure = { DiagnosticLog.w(TAG, "surplus profile lookup failed", it) },
+            ),
         )
         val freezeState = observeSpaceFreezeState(context, presentation.kind)
         val spaceAction = settingsSpaceAction(

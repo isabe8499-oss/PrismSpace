@@ -22,6 +22,7 @@ object PrismLocale {
     const val ZH = "zh"
     const val ZH_TW = "zh-TW"
     const val EN = "en"
+    const val PT_BR = "pt-BR"
     private const val KEY = "prism_locale"
 
     fun getStored(context: Context): String =
@@ -37,6 +38,7 @@ object PrismLocale {
         ZH -> listOf("zh-CN")
         ZH_TW -> listOf("zh-TW", "zh-CN")
         EN -> listOf("en")
+        PT_BR -> listOf("pt-BR")
         else -> emptyList()
     }
 

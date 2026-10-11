@@ -40,3 +40,11 @@ jobs:
 
       - name: Build debug APK and run unit tests
         run: ./gradlew --no-daemon --max-workers=2 :assembly:assembleCompleteNormalDebug :mobile:testDebugUnitTest :shared:testDebugUnitTest
+
+      - name: Upload debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: PrismSpace-pt-BR-debug
+          path: assembly/build/outputs/apk/completeNormal/debug/assembly-complete-normal-debug.apk
+          if-no-files-found: error
+          retention-days: 14

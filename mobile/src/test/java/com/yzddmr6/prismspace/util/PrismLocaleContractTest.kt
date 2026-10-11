@@ -17,7 +17,7 @@ class PrismLocaleContractTest {
         assertEquals(listOf("en"), PrismLocale.localeTagsFor(PrismLocale.EN))
         assertEquals(listOf("pt-BR"), PrismLocale.localeTagsFor(PrismLocale.PT_BR))
         assertEquals(emptyList<String>(), PrismLocale.localeTagsFor(PrismLocale.SYSTEM))
-        assertTrue(file("mobile/src/main/java/com/yzddmr6/prismspace/util/PrismLocale.kt").readText().contains("prefs.edit().putString(KEY, PT_BR).apply()"))
+        assertTrue(file("mobile/src/main/java/com/yzddmr6/prismspace/util/PrismLocale.kt").readText().contains("stored == null || stored == SYSTEM"))
     }
 
     @Test

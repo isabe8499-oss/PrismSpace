@@ -35,7 +35,7 @@ android {
         versionCode prismVersionCodeText.toInteger()
         minSdkVersion this.minSdkVersion
         targetSdkVersion 35
-        resourceConfigurations += ['en', 'zh', 'zh-rTW']
+        resourceConfigurations += ['en', 'zh', 'zh-rTW', 'pt-rBR']
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 

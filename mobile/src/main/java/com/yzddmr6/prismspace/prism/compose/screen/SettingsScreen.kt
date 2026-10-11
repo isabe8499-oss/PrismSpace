@@ -202,6 +202,7 @@ fun SettingsScreen() {
                     PrismLocale.ZH -> stringResource(R.string.prism_language_zh)
                     PrismLocale.ZH_TW -> stringResource(R.string.prism_language_zh_tw)
                     PrismLocale.EN -> stringResource(R.string.prism_language_en)
+                    PrismLocale.PT_BR -> stringResource(R.string.prism_language_pt_br)
                     else -> stringResource(R.string.prism_language_system)
                 }
                 NavRow(

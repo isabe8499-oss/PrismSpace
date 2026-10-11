@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lz_app_launch">Abrir aplicativo</string>
+    <string name="lz_app_launch_frozen_subtitle">Pausado — será retomado antes de abrir</string>
+    <string name="lz_app_freeze">Pausar clone</string>
+    <string name="lz_app_unfreeze">Retomar clone</string>
+    <string name="lz_app_create_shortcut">Adicionar atalho à tela inicial</string>
+    <string name="lz_app_app_info">Informações do aplicativo</string>
+    <string name="lz_app_uninstall_clone">Desinstalar clone</string>
+    <string name="lz_app_go_to_dual_space">Ir para o espaço clonado</string>
+    <string name="lz_app_clone_to_dual_space">Clonar para o espaço clonado</string>
+    <string name="lz_app_copy_to">Copiar para</string>
+    <string name="lz_app_target_already_in_space">%1$s · Já está neste espaço</string>
+    <string name="lz_app_method_filesync_title">Instalação confirmada pelo sistema</string>
+    <string name="lz_app_method_filesync_summary">Recomendado · o Android solicitará confirmação em cada instalação</string>
+    <string name="lz_app_method_shizuku_title">Instalação automática via Shizuku</string>
+    <string name="lz_app_method_shizuku_summary_ready">Instala silenciosamente no espaço clonado via Shizuku</string>
+    <string name="lz_app_method_root_title">Instalação automática via Root</string>
+    <string name="lz_app_method_root_summary_ready">Instala silenciosamente no espaço clonado via Root</string>
+    <string name="lz_app_filesync_open_install_entry">Abrir instalador do espaço clonado</string>
+    <string name="lz_app_filesync_allow_file_manager">Permitir gerenciador de arquivos</string>
+    <string name="lz_app_filesync_install_later">Instalar mais tarde</string>
+    <string name="lz_app_continue_install">Continuar instalação</string>
+    <string name="lz_app_clone_shizuku_failed">A clonagem via Shizuku falhou (%1$s). Confira a autorização do Shizuku/Sui ou use o método de instalação por arquivo.</string>
+    <string name="lz_app_delete_dual_space">Excluir espaço clonado</string>
+    <string name="lz_app_continue_delete">Continuar</string>
+    <string name="lz_app_cancel">Cancelar</string>
+    <string name="lz_app_final_confirmation">Confirmação final</string>
+    <string name="lz_app_delete_final_warning">Após a confirmação, o espaço clonado será excluído imediatamente e todos os dados dos clones serão irrecuperáveis.</string>
+    <string name="lz_app_permanently_delete">Excluir permanentemente</string>
+    <string name="lz_app_repair_dual_space_title">Reparar espaço clonado?</string>
+    <string name="lz_app_repair_dual_space_body">Esta ação restabelece a associação de proprietário do perfil de trabalho e só deve ser usada quando o espaço clonado estiver em estado anormal.\n\nObservação:\n• Todos os aplicativos clonados em execução serão fechados durante o reparo.\n• O sistema pode tirar você temporariamente do PrismSpace; volte ao app depois para conferir o resultado.\n• Na maioria dos casos, esse recurso não é necessário.</string>
+    <string name="lz_app_start_repair">Iniciar reparo</string>
+    <string name="lz_clone_confirm_title">Adicionar um clone de “%1$s”</string>
+    <string name="lz_clone_confirm_body_filesync">O PrismSpace copiará o pacote completo de instalação para o espaço clonado e, em seguida, o Android solicitará confirmação.</string>
+    <string name="lz_clone_confirm_body_auto">Instala automaticamente no espaço clonado usando o método atual (%1$s).</string>
+    <string name="lz_clone_change_method">Alterar</string>
+    <string name="lz_clone_prepare_packages">Preparar pacote de instalação</string>
+    <string name="lz_clone_confirm_body_system">Os aplicativos do sistema são ativados diretamente no espaço clonado — não é necessário copiar um pacote.</string>
+    <string name="lz_clone_enable_system">Ativar</string>
+    <string name="lz_clone_auto_install">Instalar automaticamente</string>
+    <string name="lz_app_delete_dual_space_warning_count">Exclui permanentemente %1$d clones, suas contas, dados e arquivos no espaço clonado. Esta ação não pode ser desfeita.</string>
+</resources>

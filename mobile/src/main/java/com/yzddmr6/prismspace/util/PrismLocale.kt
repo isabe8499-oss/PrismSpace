@@ -25,9 +25,17 @@ object PrismLocale {
     const val PT_BR = "pt-BR"
     private const val KEY = "prism_locale"
 
-    fun getStored(context: Context): String =
-        PreferenceManager.getDefaultSharedPreferences(context.applicationContext)
-            .getString(KEY, PT_BR) ?: PT_BR
+    fun getStored(context: Context): String {
+        val prefs = PreferenceManager.getDefaultSharedPreferences(context.applicationContext)
+        // Migrate users who installed an earlier build: an existing "system" preference
+        // would otherwise override the new Brazilian Portuguese default forever.
+        val stored = prefs.getString(KEY, null)
+        if (stored == null || stored == SYSTEM) {
+            prefs.edit().putString(KEY, PT_BR).apply()
+            return PT_BR
+        }
+        return stored
+    }
 
     fun setStored(context: Context, tag: String) {
         PreferenceManager.getDefaultSharedPreferences(context.applicationContext)

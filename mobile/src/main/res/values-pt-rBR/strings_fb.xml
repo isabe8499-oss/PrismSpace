@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fb_need_create_space">Crie primeiro um espaço clonado</string>
+    <string name="fb_space_not_ready">O espaço clonado ainda não está pronto</string>
+    <string name="fb_space_inactive">O espaço clonado está pausado. Ative os apps de trabalho e tente novamente.</string>
+    <string name="fb_space_bridge_repair_needed">O espaço clonado precisa se reconectar antes que os arquivos possam ser copiados.</string>
+    <string name="fb_space_internal_operation_failed">Uma operação do espaço clonado falhou internamente (%1$s). Exporte os diagnósticos ao relatar o problema.</string>
+    <string name="fb_apk_unreadable">Não foi possível ler o instalador do aplicativo</string>
+    <string name="fb_apk_transfer_failed">Não foi possível transferir o instalador</string>
+    <string name="fb_apk_transferred">Instalador copiado para o espaço clonado: %1$s</string>
+    <string name="fb_open_files_failed">Não foi possível abrir o gerenciador de arquivos do espaço clonado (encaminhamento do sistema indisponível)</string>
+    <string name="fb_opened_downloads">Pasta Downloads do espaço clonado aberta</string>
+    <string name="fb_opened_profile_entry">Entrada PrismSpace — Espaço Clonado aberta</string>
+    <string name="fb_opened_profile_entry_retry">Entrada do espaço clonado aberta. Volte ao PrismSpace e tente novamente após a reconexão.</string>
+    <string name="fb_open_downloads_failed">Não foi possível abrir a pasta Downloads do espaço clonado</string>
+</resources>

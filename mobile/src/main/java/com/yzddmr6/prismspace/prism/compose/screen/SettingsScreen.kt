@@ -341,6 +341,7 @@ fun SettingsScreen() {
             PrismLocale.ZH to stringResource(R.string.prism_language_zh),
             PrismLocale.ZH_TW to stringResource(R.string.prism_language_zh_tw),
             PrismLocale.EN to stringResource(R.string.prism_language_en),
+            PrismLocale.PT_BR to stringResource(R.string.prism_language_pt_br),
         )
         AlertDialog(
             onDismissRequest = { showLangDialog = false },

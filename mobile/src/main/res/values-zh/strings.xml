@@ -117,6 +117,7 @@
     <string name="prism_language_zh">简体中文</string>
     <string name="prism_language_zh_tw">繁體中文</string>
     <string name="prism_language_en">English</string>
+    <string name="prism_language_pt_br">葡萄牙语（巴西）</string>
     <!-- Chinese for the new PrismSpace strings whose English default lives in values/ -->
     <string name="toast_clone_root_unavailable">需要 Root 授权才能自动克隆。请在设置中启用 Root，或改用 Shizuku / Play / 文件方式。</string>
     <string name="toast_clone_file_sync_transferring">正在把安装包传输到双开空间…</string>

@@ -15,7 +15,9 @@ class PrismLocaleContractTest {
         assertEquals(listOf("zh-TW", "zh-CN"), PrismLocale.localeTagsFor(PrismLocale.ZH_TW))
         assertEquals(listOf("zh-CN"), PrismLocale.localeTagsFor(PrismLocale.ZH))
         assertEquals(listOf("en"), PrismLocale.localeTagsFor(PrismLocale.EN))
+        assertEquals(listOf("pt-BR"), PrismLocale.localeTagsFor(PrismLocale.PT_BR))
         assertEquals(emptyList<String>(), PrismLocale.localeTagsFor(PrismLocale.SYSTEM))
+        assertTrue(file("mobile/src/main/java/com/yzddmr6/prismspace/util/PrismLocale.kt").readText().contains(".getString(KEY, PT_BR) ?: PT_BR"))
     }
 
     @Test
@@ -25,13 +27,14 @@ class PrismLocaleContractTest {
             "prism_language_en",
             "prism_language_zh",
             "prism_language_zh_tw",
+            "prism_language_pt_br",
         )
         assertTrue(stringsIn("mobile/src/main/res/values/strings.xml").keys.containsAll(required))
         assertTrue(stringsIn("mobile/src/main/res/values-zh/strings.xml").keys.containsAll(required))
         assertTrue(stringsIn("mobile/src/main/res/values-zh-rTW/strings.xml").containsKey("prism_language_zh_tw"))
 
         val settingsSource = file("mobile/src/main/java/com/yzddmr6/prismspace/prism/compose/screen/SettingsScreen.kt").readText()
-        listOf("SYSTEM", "EN", "ZH", "ZH_TW").forEach { choice ->
+        listOf("SYSTEM", "EN", "ZH", "ZH_TW", "PT_BR").forEach { choice ->
             assertTrue("Missing language choice: $choice", settingsSource.contains("PrismLocale.$choice"))
         }
     }

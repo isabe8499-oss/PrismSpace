@@ -32,7 +32,7 @@
     <string name="lz_pf_install_success">Aplicativo instalado no espaço clonado.</string>
     <string name="lz_pf_install_failed">Falha na instalação: %1$s</string>
     <string name="lz_pf_install_need_perm">Permita que o PrismSpace instale apps desconhecidos e toque em Instalar novamente.</string>
-    <string name="lz_pf_install_source_need_perm">Permita que este gerenciador de arquivos instale apps desconhecidos e depois volte ao PrismSpace para abrir o APK novamente.</string>
+    <string name="lz_pf_install_source_need_perm">Permita que este gerenciador de arquivos instale apps desconhecidos e volte ao PrismSpace para abrir o APK novamente.</string>
     <string name="lz_pf_install_use_prismspace">Este gerenciador de arquivos do sistema não pode receber autorização para instalar APK. Toque em Instalar aqui para continuar com o PrismSpace.</string>
     <string name="lz_pf_install_refused_title">O instalador do sistema não concluiu a instalação</string>
     <string name="lz_pf_install_refused_body">O instalador do sistema (%1$s) interrompeu a instalação antes de mostrar a confirmação. Você não a cancelou. Você pode abrir o pacote diretamente com o instalador do sistema; se Shizuku ou Root estiver configurado no espaço principal, volte e adicione o clone novamente usando esse modo.</string>

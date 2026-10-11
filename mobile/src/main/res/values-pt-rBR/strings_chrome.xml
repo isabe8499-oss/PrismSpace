@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lz_mode_normal">Modo normal</string>
+    <string name="lz_mode_shizuku">Shizuku/ADB</string>
+    <string name="lz_mode_root">Root</string>
+    <string name="lz_nav_home">Início</string>
+    <string name="lz_nav_space">Espaços</string>
+    <string name="lz_nav_files">Arquivos</string>
+    <string name="lz_nav_settings">Configurações</string>
+    <string name="lz_space_main_name">Espaço principal</string>
+</resources>

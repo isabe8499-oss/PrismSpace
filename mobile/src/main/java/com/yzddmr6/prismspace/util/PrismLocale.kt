@@ -27,7 +27,7 @@ object PrismLocale {
 
     fun getStored(context: Context): String =
         PreferenceManager.getDefaultSharedPreferences(context.applicationContext)
-            .getString(KEY, SYSTEM) ?: SYSTEM
+            .getString(KEY, PT_BR) ?: PT_BR
 
     fun setStored(context: Context, tag: String) {
         PreferenceManager.getDefaultSharedPreferences(context.applicationContext)

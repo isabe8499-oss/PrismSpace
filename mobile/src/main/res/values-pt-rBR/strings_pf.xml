@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lz_pf_entry_hero_title_warn">PrismSpace não está pronto</string>
+    <string name="lz_pf_entry_hero_body_warn">Este perfil de trabalho ainda não concedeu permissão de gerenciamento ao PrismSpace. Reconfigure-o no espaço principal.</string>
+    <string name="lz_pf_entry_hero_tag_warn">Erro</string>
+    <string name="lz_pf_entry_footer">O gerenciamento e as configurações devem ser feitos no aplicativo PrismSpace do espaço principal.</string>
+    <string name="lz_pf_entry_topbar">Espaço clonado</string>
+    <string name="lz_pf_entry_back_hint">Quer voltar ao espaço principal? Use a tela de aplicativos recentes ou o seletor pessoal/trabalho da tela inicial.</string>
+    <string name="lz_pf_files_title">Arquivos</string>
+    <string name="lz_pf_files_send_other_summary">Escolha aqui os arquivos para copiá-los ao espaço clonado: imagens vão para Pictures/PrismSpace e outros arquivos para Download/PrismSpace.</string>
+    <string name="lz_pf_files_step1">No espaço clonado, abra o PrismSpace e toque em Enviar para o espaço principal.</string>
+    <string name="lz_pf_files_step2">Ou, em qualquer aplicativo, toque em Compartilhar → Enviar para outro espaço.</string>
+    <string name="lz_pf_files_step3">Confirme e aguarde o resultado. Os arquivos aparecerão em Download/PrismSpace no espaço principal; imagens ficarão em Pictures/PrismSpace.</string>
+    <string name="lz_pf_files_tab_hint">O PrismSpace define o destino com base no espaço de origem: o arquivo sempre vai para o outro espaço, seja qual for a guia Pessoal/Trabalho exibida.</string>
+    <string name="lz_pf_files_return_title">Como enviar arquivos de volta do espaço clonado</string>
+    <string name="lz_pf_choose_files">Escolher arquivos</string>
+    <string name="lz_pf_files_history_title">Histórico de transferências</string>
+    <string name="lz_pf_files_clear">Limpar</string>
+    <string name="lz_pf_files_clear_confirm_title">Limpar o histórico de transferências?</string>
+    <string name="lz_pf_files_clear_confirm_body">Isso limpa apenas o histórico abaixo; os arquivos transferidos não serão apagados.</string>
+    <string name="lz_pf_open_fail">Não foi possível abrir diretamente. Procure em Download/PrismSpace no gerenciador de arquivos do sistema.</string>
+    <string name="lz_pf_install">Instalar</string>
+    <string name="lz_pf_entry_pending_installs">Instalação pendente</string>
+    <string name="lz_pf_entry_pending_ready">Pacote pronto · o Android pedirá confirmação</string>
+    <string name="lz_files_gate_suspended">Retome o espaço clonado em Configurações antes de enviar arquivos</string>
+    <string name="lz_files_gate_locked">Desbloqueie o espaço clonado antes de enviar arquivos</string>
+    <string name="lz_files_gate_bridge">Repare a conexão do espaço clonado antes de enviar arquivos</string>
+    <string name="lz_files_gate_missing">Configure o espaço clonado antes de enviar arquivos</string>
+    <string name="lz_files_gate_unknown">Repare o espaço clonado em Configurações antes de enviar arquivos</string>
+    <string name="lz_pf_install_no_apk">Não foi possível encontrar o pacote copiado neste espaço. Clone-o novamente a partir do espaço principal.</string>
+    <string name="lz_pf_install_started">Preparando a instalação…</string>
+    <string name="lz_pf_install_success">Aplicativo instalado no espaço clonado.</string>
+    <string name="lz_pf_install_failed">Falha na instalação: %1$s</string>
+    <string name="lz_pf_install_need_perm">Permita que o PrismSpace instale apps desconhecidos e toque em Instalar novamente.</string>
+    <string name="lz_pf_install_source_need_perm">Permita que este gerenciador de arquivos instale apps desconhecidos e depois volte ao PrismSpace para abrir o APK novamente.</string>
+    <string name="lz_pf_install_use_prismspace">Este gerenciador de arquivos do sistema não pode receber autorização para instalar APK. Toque em Instalar aqui para continuar com o PrismSpace.</string>
+    <string name="lz_pf_install_refused_title">O instalador do sistema não concluiu a instalação</string>
+    <string name="lz_pf_install_refused_body">O instalador do sistema (%1$s) interrompeu a instalação antes de mostrar a confirmação. Você não a cancelou. Você pode abrir o pacote diretamente com o instalador do sistema; se Shizuku ou Root estiver configurado no espaço principal, volte e adicione o clone novamente usando esse modo.</string>
+    <string name="lz_pf_install_refused_split">Este aplicativo contém vários pacotes divididos, que o gerenciador de arquivos não consegue instalar em conjunto. Volte ao espaço principal e adicione o clone usando Shizuku/Root.</string>
+    <string name="lz_pf_install_open_with_system">Abrir com o instalador do sistema</string>
+    <string name="lz_pf_install_refused_how_to_report">Como relatar</string>
+    <string name="lz_pf_install_report_hint">Volte ao espaço principal → Configurações → Exportar diagnósticos e envie o arquivo.</string>
+    <string name="lz_pf_install_failed_title">Falha na instalação</string>
+    <string name="lz_pf_install_cancelled">Instalação cancelada.</string>
+</resources>

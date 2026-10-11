@@ -18,11 +18,11 @@
     <string name="lz_space_batch_uninstall">Desinstalar</string>
     <string name="lz_space_batch_cancel">Cancelar</string>
     <string name="lz_space_batch_uninstall_title">Desinstalar %1$d aplicativo(s)?</string>
-    <string name="lz_space_batch_uninstall_body">Os %1$d aplicativos selecionados serão desinstalados dentro do espaço clonado, removendo suas contas e dados. Os apps com o mesmo nome no espaço principal não serão afetados. O sistema pedirá confirmação para cada um.</string>
+    <string name="lz_space_batch_uninstall_body">Os %1$d aplicativos selecionados serão desinstalados no espaço clonado, removendo suas contas e dados. Apps com o mesmo nome no espaço principal não serão afetados. O sistema pedirá confirmação para cada um.</string>
     <string name="lz_space_batch_uninstall_confirm">Desinstalar</string>
     <string name="lz_space_batch_clone_title">Clonar %1$d aplicativo(s) para o espaço clonado?</string>
-    <string name="lz_space_batch_clone_body">Os %1$d aplicativos selecionados serão clonados um por um, de acordo com o modo de execução atual. No modo normal, os pacotes de instalação serão transferidos e precisarão ser instalados manualmente no espaço clonado.</string>
-    <string name="lz_space_batch_clone_confirm">Começar clonagem</string>
+    <string name="lz_space_batch_clone_body">Os %1$d aplicativos selecionados serão clonados um por um, de acordo com o modo atual. No modo normal, os instaladores serão transferidos e precisarão ser instalados manualmente no espaço clonado.</string>
+    <string name="lz_space_batch_clone_confirm">Iniciar clonagem</string>
     <string name="lz_space_dialog_cancel">Cancelar</string>
     <string name="lz_space_delete_target_missing">O espaço não existe ou foi removido</string>
     <string name="lz_space_search_dual">Pesquisar no espaço clonado</string>
@@ -46,14 +46,14 @@
     <string name="lz_space_empty_no_match_hint">Tente outro termo de pesquisa</string>
     <string name="lz_space_empty_dual_locked_hint">Desbloqueie o espaço clonado com a senha da tela de bloqueio para ver os clones</string>
     <string name="lz_space_empty_dual_suspended_hint">Retome o espaço clonado em Configurações</string>
-    <string name="lz_space_empty_dual_bridge_hint">Abra Configurações e repare a conexão com o espaço clonado</string>
+    <string name="lz_space_empty_dual_bridge_hint">Abra Configurações e repare a conexão do espaço clonado</string>
     <string name="lz_space_empty_dual_unknown_hint">Abra Configurações e repare o espaço clonado</string>
-    <string name="lz_space_empty_dual_none_hint">Vá ao Espaço principal, toque em um aplicativo e clone-o para o espaço clonado</string>
-    <string name="lz_space_empty_none_hint">Ajuste os filtros ou os critérios de pesquisa</string>
-    <string name="lz_space_main_copy_lost_title">O aplicativo não está mais instalado no espaço principal</string>
-    <string name="lz_space_main_copy_lost_body">Após a desinstalação de %1$s pelo sistema, a cópia no espaço principal não está mais presente. Esse é o estado informado pelo Android. Se necessário, restaure o aplicativo e seus dados a partir de um backup.</string>
+    <string name="lz_space_empty_dual_none_hint">Vá ao Espaço principal, toque em um app e clone-o para o espaço clonado</string>
+    <string name="lz_space_empty_none_hint">Ajuste os filtros ou critérios de pesquisa</string>
+    <string name="lz_space_main_copy_lost_title">O app não está mais instalado no espaço principal</string>
+    <string name="lz_space_main_copy_lost_body">Após a desinstalação de %1$s pelo sistema, a cópia no espaço principal não está mais presente. Esse é o estado informado pelo Android. Se necessário, restaure o aplicativo e seus dados de um backup.</string>
     <string name="lz_space_suspend_recovery_title">Clone ainda pausado</string>
-    <string name="lz_space_suspend_recovery_body">Este clone foi pausado por %1$s, e o Android só permite que o mesmo componente reverta essa ação. Você pode tentar recuperá-lo reinstalando-o via Shizuku/Root (os dados do clone serão apagados) ou desinstalá-lo e cloná-lo novamente.</string>
+    <string name="lz_space_suspend_recovery_body">Este clone foi pausado por %1$s, e o Android só permite que o mesmo componente reverta essa ação. Você pode tentar recuperá-lo reinstalando-o via Shizuku/Root (os dados serão apagados) ou desinstalá-lo e cloná-lo novamente.</string>
     <string name="lz_space_suspend_recovery_reinstall">Reinstalar (apagar dados)</string>
     <string name="lz_space_suspend_recovery_cancel">Cancelar</string>
     <string name="lz_space_suspend_unknown_suspender">um componente do sistema</string>
@@ -96,7 +96,7 @@
     <string name="lz_space_row_add">Adicionar</string>
     <string name="lz_app_add_system_to_space">Adicionar ao espaço clonado</string>
     <string name="lz_app_remove_system_from_space">Remover do espaço clonado</string>
-    <string name="lz_app_remove_system_from_space_subtitle">Ocultado e interrompido; os dados serão mantidos e o app pode ser adicionado novamente</string>
+    <string name="lz_app_remove_system_from_space_subtitle">Ocultado e interrompido; os dados serão mantidos e o app poderá ser adicionado novamente</string>
     <string name="lz_app_no_launcher_entry">Este aplicativo não possui atalho de inicialização e não pode ser aberto diretamente</string>
     <string name="lz_app_removed_system_from_space">%1$s foi removido do espaço clonado</string>
 </resources>
